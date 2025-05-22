@@ -1,0 +1,20 @@
+#build <http.pgt>
+
+import start 
+
+function(POST) {
+    give()::{
+       from::{
+        Path::("libs/internet_libs/http.pgt")
+
+       } 
+    }
+    exit::();
+}
+
+Class ::(http.pgt) {
+    
+    exit::();
+}
+
+import exit::end::();
