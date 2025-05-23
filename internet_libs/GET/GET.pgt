@@ -1,0 +1,184 @@
+#build <http.pgt>
+
+import start 
+
+function(HTTP) {
+    give()::{
+       from::{
+            Path::("libs/internet_libs/http.pgt")
+                vg {
+                    HTTP {
+                        Protocol = "GET" {
+                            Method = "GET"
+                            URL = "http://www.example.com"
+                            IP = "127.0.0.1"
+                            Port = 80
+                        }
+                    }
+            }
+        }
+        if (Protocol == "GET") {
+            print("GET request sent to " + URL)
+            return "GET";
+                li [
+                    Method = "GET"
+                    URL = "http://www.example.com"
+                    IP = "127.0.0.1"
+                    Port = 80
+                ]
+            vg (GET) {
+                Method = "GET"
+                URL = "http://www.example.com"
+                IP = "127.0.0.1"
+                Port = 80
+            }
+            li (GET) {
+                Method = "GET"
+                URL = "http://www.example.com"
+                IP = "127.0.0.1"
+                Port = 80
+            }
+        } 
+    }
+    exit::();
+}
+
+function (HTTPS) {
+    give()::{
+        from::{
+            Path::("libs/internet_libs/https.pgt")
+                vg {
+                    HTTPS {
+                        Protocol = "GET" {
+                            Method = "GET"
+                            URL = "https://www.example.com"
+                            IP = "127.0.0.1"
+                            Port = 443
+                        }
+                    }
+            }
+        }
+        if (Protocol == "GET") {
+            print("GET request sent to " + URL)
+            return "GET";
+            li [
+                Method = "GET"
+                URL = "https://www.example.com"
+                IP = "127.0.0.1"
+                Port = 443
+            ]
+            vg (GET) {
+                Method = "GET"
+                URL = "https://www.example.com"
+                IP = "127.0.0.1"
+                Port = 443
+            }
+        }
+        else {
+            print("Invalid protocol")
+            return "Invalid protocol";
+            li [
+                Method = "GET"
+                URL = "https://www.example.com"
+                IP = "127.0.0.1"
+                Port = 443
+            ]
+        }
+    }
+    exit::();
+}
+
+Class (GET) {
+    give()::{
+        if (Protocol == "GET") {
+            return "GET";
+                li [
+                    Method = "GET"
+                    URL = "http://www.example.com"
+                    IP = "127.0.0.1"
+                    Port = 80
+                ]
+            vg (GET) {
+                Method = "GET"
+                URL = "http://www.example.com"
+                IP = "127.0.0.1"
+                Port = 80
+            }
+        }
+        else {
+            print("Invalid protocol")
+            return "Invalid protocol";
+            li [
+                Method = "GET"
+                URL = "http://www.example.com"
+                IP = "127.0.0.1"
+                Port = 80
+            ]
+        }
+    }
+    exit::();
+}
+
+Class (HTTPS) {
+    give()::{
+        if (Protocol == "GET") {
+        return "GET";
+        li [
+            Method = "GET"
+            URL = "https://www.example.com"
+            IP = "127.0.0.1"
+            Port = 443
+        ]
+        vg (GET) {
+            Method = "GET"
+            URL = "https://www.example.com"
+            IP = "127.0.0.1"
+            Port = 443
+        }
+        }
+        else {
+            print("Invalid protocol")
+            return "Invalid protocol";
+            li [
+                Method = "GET"
+                URL = "https://www.example.com"
+                IP = "127.0.0.1"
+                Port = 443
+            ]
+        }
+    }
+    exit::();
+}
+
+Class (HTTP) {
+    give()::{
+        if (Protocol == "GET") {
+        return "GET";
+        li [
+            Method = "GET"
+            URL = "http://www.example.com"
+            IP = "127.0.0.1"
+            Port = 80
+        ]
+        vg (GET) {
+            Method = "GET"
+            URL = "http://www.example.com"
+            IP = "127.0.0.1"
+            Port = 80
+        }
+        }
+        else {
+            print("Invalid protocol")
+            return "Invalid protocol";
+            li [
+                Method = "GET"
+                URL = "http://www.example.com"
+                IP = "127.0.0.1"
+                Port = 80
+            ]
+        }
+    }
+    exit::();
+}
+
+import exit::end::();

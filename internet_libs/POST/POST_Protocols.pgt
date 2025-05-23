@@ -2,18 +2,165 @@
 
 import start 
 
-function(POST) {
+function(HTTP) {
     give()::{
        from::{
-        Path::("libs/internet_libs/http.pgt")
+            Path::("libs/internet_libs/http.pgt")
+                vg {
+                    HTTP {
+                        Protocol = "POST" {
+                            Method = "POST"
+                            URL = "http://www.example.com"
+                            IP = "127.0.0.1"
+                            Port = 80
+                        }
+                    }
 
-       } 
+                    HTTP {
+                        Protocol = "GET" {
+                            Method = "GET"
+                            URL = "http://www.example.com"
+                            IP = "127.0.0.1"
+                            Port = 80
+                        }
+                    }
+            }
+        } 
     }
     exit::();
 }
 
-Class ::(http.pgt) {
-    
+function (HTTPS) {
+    give()::{
+        from::{
+            Path::("libs/internet_libs/https.pgt")
+                vg {
+                    HTTPS {
+                        Protocol = "POST" {
+                            Method = "POST"
+                            URL = "https://www.example.com"
+                            IP = "127.0.0.1"
+                            Port = 443
+                        }
+                    }
+                    HTTPS {
+                        Protocol = "GET" {
+                            Method = "GET"
+                            URL = "https://www.example.com"
+                            IP = "127.0.0.1"
+                            Port = 443
+                        }
+                    }
+                }
+        }
+    }
+    exit::();
+}
+
+Class HTTP {
+    give()::{
+        if (Protocol == "GET") {
+            return "GET";
+                li [
+                    Method = "GET"
+                    URL = "http://www.example.com"
+                    IP = "127.0.0.1"
+                    Port = 80
+                ]
+            vg (GET) {
+                Method = "GET"
+                URL = "http://www.example.com"
+                IP = "127.0.0.1"
+                Port = 80
+            }
+        }
+        if (Protocol == "POST") {
+            return "POST";
+                li [
+                    Method = "POST"
+                    URL = "http://www.example.com"
+                    IP = "127.0.0.1"
+                    Port = 80
+                ]
+            vg (POST) {
+                Method = "POST"
+                URL = "http://www.example.com"
+                IP = "127.0.0.1"
+                Port = 80
+            }
+        }
+        else {
+            return "ERROR";
+                li [
+                    Method = "ERROR"
+                    URL = "http://www.example.com"
+                    IP = "127.0.0.1"
+                    Port = 80
+                ]
+
+            vg (ERROR) {
+                Method = "ERROR"
+                URL = "http://www.example.com"
+                IP = "127.0.0.1"
+                Port = 80
+            }
+
+        }
+    }
+    exit::();
+}
+
+Class HTTPS {
+    give()::{
+        if (Protocol == "GET") {
+            return "GET";
+                li [
+                    Method = "GET"
+                    URL = "https://www.example.com"
+                    IP = "127.0.0.1"
+                    Port = 443
+                ]
+            vg (GET) {
+                Method = "GET"
+                URL = "https://www.example.com"
+                IP = "127.0.0.1"
+                Port = 443
+            }
+        }
+
+        if (Protocol == "POST") {
+            return "POST";
+                li [
+                    Method = "POST"
+                    URL = "https://www.example.com"
+                    IP = "127.0.0.1"
+                    Port = 443
+                ]
+            vg (POST) {
+                Method = "POST"
+                URL = "https://www.example.com"
+                IP = "127.0.0.1"
+                Port = 443
+            }
+        }
+        else {
+            return "ERROR";
+                li [
+                    Method = "ERROR"
+                    URL = "https://www.example.com"
+                    IP = "127.0.0.1"
+                    Port = 443
+                ]
+
+            vg (ERROR) {
+                Method = "ERROR"
+                URL = "https://www.example.com"
+                IP = "127.0.0.1"
+                Port = 443
+            }
+
+        }
+    }
     exit::();
 }
 
