@@ -1,0 +1,211 @@
+import start
+
+function (ip-v4) {
+    give::() {
+        vg (ip-v4) {
+            IP = "127.0.0.1"
+            protocol = "POST";
+            protocol = "GET";
+            protocol = "HTTPS";
+            protocol = "HTTP";
+            li [
+                IP = "127.0.0.1"
+                protocol = "POST";
+                protocol = "GET";
+                protocol = "HTTPS";
+                protocol = "HTTP";
+            ]
+        
+        }
+        li [
+            IP = "127.0.0.1"
+            protocol = "POST";
+            protocol = "GET";
+            protocol = "HTTPS";
+            protocol = "HTTP";
+        ]
+        
+    }
+    exit::();
+}
+
+function (Start_server_ip-v4) {
+    give::() {
+        protocol = "POST";
+        protocol = "GET";
+        protocol = "HTTPS";
+        protocol = "HTTP";
+        vg (Start_server_ip-v4) {
+            li [
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+                1xx.xxx.xx.xx
+            ]
+        }
+    }
+    exit::();   
+}
+
+```
+Открываем парсини ip адрисов 
+Открываем парсинг от диапазона 1xx.xxx.xx.xx
+```
+
+Class 

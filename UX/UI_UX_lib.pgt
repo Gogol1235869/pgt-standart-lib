@@ -1,0 +1,23 @@
+import start
+
+Class label {
+    give::() {
+        function::(label) {
+            give::() {
+                create {
+                    [window, label, button, text, input, image]
+                    if (window) {
+                       std::cout = window.create == true;
+                    else 
+                        std::cout = window.create == false;
+                    }
+                }
+            }
+        }
+    }
+    exit::();
+}
+
+import exit::end::();
+
+start-compiler

@@ -1,0 +1,158 @@
+import start 
+
+function(start) {
+    give::() {
+        li [
+            https == "GET",
+            https == "POST", 
+        ]
+        vg(start) {
+            start blocks {
+                start(HTTPS);
+                start(HTTPS);
+                protocol = "GET";
+                protocol = "POST";
+                start::protocol == "GET";
+                start::protocol == "POST";
+                start::protocol = "HTTPS", + "GET", + "POST";
+
+            }
+        }
+        start (HTTPS, Server) {
+            start(HTTPS, Server) {
+                start(HTTPS);
+                start(HTTPS);
+                protocol = "GET";
+                protocol = "POST";
+                start::protocol == "GET";
+                start::protocol == "POST";
+                start::protocol = "HTTPS", + "GET", + "POST";
+            }
+            vg (start) {
+                start(HTTPS);
+                start(HTTPS);
+                protocol = "GET";
+                protocol = "POST";
+                start::protocol == "GET";
+                start::protocol == "POST";
+                start::protocol = "HTTPS", + "GET", + "POST";
+            }
+            if (start::protocol == "GET") {
+                start(HTTPS);
+                }
+            if (start::protocol == "POST") {
+                start(HTTPS);
+                }
+        }
+    }
+    exit::();
+}
+
+function(HTTPS) {
+    give()::{
+        if (Protocol == "GET") {
+        return HTTPSResponse(200, "Hello, World!");
+        li [
+            Method = "GET"
+            URL = "https://www.example.com"
+            IP = "127.0.0.1"
+            Port = 80
+        ]
+        vg (GET) {
+            Method = "GET"
+            URL = "https://www.example.com"
+            IP = "127.0.0.1"
+            Port = 80
+            }
+
+            li [
+                return HTTPSResponse(200, "Hello, World!");
+                return HTTPSResponse(206, "Partial Content");
+                return HTTPSResponse(301, "Moved Permanently");
+                return HTTPSResponse(302, "Found");
+                return HTTPSResponse(303, "See Other");
+                return HTTPSResponse(304, "Not Modified");
+                return HTTPSResponse(306, "Unused");
+                return HTTPSResponse(307, "Temporary Redirect");
+                return HTTPSResponse(400, "Bad Request");
+                return HTTPSResponse(404, "Not Found");
+                return HTTPSResponse(405, "Method Not Allowed");
+                return HTTPSResponse(406, "Not Acceptable");
+                return HTTPSResponse(407, "Proxy Authentication Required");
+                return HTTPSResponse(408, "Request Time-out");
+                return HTTPSResponse(409, "Conflict");
+                return HTTPSResponse(410, "Gone");
+                return HTTPSResponse(411, "Length Required");
+                return HTTPSResponse(412, "Precondition Failed");
+                return HTTPSResponse(413, "Request Entity Too Large");
+                return HTTPSResponse(414, "Request-URI Too Large");
+                return HTTPSResponse(415, "Unsupported Media Type");
+                return HTTPSResponse(416, "Requested Range Not Satisfiable");
+                return HTTPSResponse(417, "Expectation Failed");
+                return HTTPSResponse(500, "Internal Server Error");
+                return HTTPSResponse(501, "Not Implemented");
+                return HTTPSResponse(502, "Bad Gateway");
+                return HTTPSResponse(503, "Service Unavailable");
+                return HTTPSResponse(504, "Gateway Time-out");
+                return HTTPSResponse(505, "HTTP Version Not Supported");
+            ]
+        }
+    exit::();
+    }
+}
+
+function (HTTPS) {
+    give()::{
+        li [
+            Method = "GET"
+            URL = "https://www.example.com"
+            IP = "127.0.0.1"
+            Port = 80
+        ]
+        vg (GET) {
+            Method = "GET"
+            URL = "https://www.example.com"
+            IP = "127.0.0.1"
+            Port = 80
+            }
+        protocol = "POST";
+            li [
+                return HTTPSResponse(200, "Hello, World!");
+                return HTTPSResponse(206, "Partial Content");
+                return HTTPSResponse(301, "Moved Permanently");
+                return HTTPSResponse(302, "Found");
+                return HTTPSResponse(303, "See Other");
+                return HTTPSResponse(304, "Not Modified");
+                return HTTPSResponse(306, "Unused");
+                return HTTPSResponse(307, "Temporary Redirect");
+                return HTTPSResponse(400, "Bad Request");
+                return HTTPSResponse(404, "Not Found");
+                return HTTPSResponse(405, "Method Not Allowed");
+                return HTTPSResponse(406, "Not Acceptable");
+                return HTTPSResponse(407, "Proxy Authentication Required");
+                return HTTPSResponse(408, "Request Time-out");
+                return HTTPSResponse(409, "Conflict");
+                return HTTPSResponse(410, "Gone");
+                return HTTPSResponse(411, "Length Required");
+                return HTTPSResponse(412, "Precondition Failed");
+                return HTTPSResponse(413, "Request Entity Too Large");
+                return HTTPSResponse(414, "Request-URI Too Large");
+                return HTTPSResponse(415, "Unsupported Media Type");
+                return HTTPSResponse(416, "Requested Range Not Satisfiable");
+                return HTTPSResponse(417, "Expectation Failed");
+                return HTTPSResponse(500, "Internal Server Error");
+                return HTTPSResponse(501, "Not Implemented");
+                return HTTPSResponse(502, "Bad Gateway");
+                return HTTPSResponse(503, "Service Unavailable");
+                return HTTPSResponse(504, "Gateway Time-out");
+                return HTTPSResponse(505, "HTTP Version Not Supported");
+            ]
+
+    }
+    exit::();
+}
+
+Class (HTTPS) {
+    give()::{
+    }
+}

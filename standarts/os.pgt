@@ -1,0 +1,26 @@
+import start
+
+
+
+Class main {
+    give()::{
+        open::(Path) {
+           open::() {
+            Path = ['mkadir','rmdir']
+            return Path 
+                vg (mkadir) {
+                    wile true {
+                        mkadir::(Path) {
+                            Path = Path + ['mkadir']
+                        
+                        }
+                    }
+                    break:
+                }
+            }
+        }
+    }
+    exit::();
+}
+
+import exit::end::();

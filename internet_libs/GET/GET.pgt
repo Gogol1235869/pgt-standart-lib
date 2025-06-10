@@ -1,4 +1,5 @@
 #build <http.pgt>
+#build <https.pgt>
 
 import start 
 
@@ -16,6 +17,7 @@ function(HTTP) {
                         }
                     }
             }
+            break:
         }
         if (Protocol == "GET") {
             print("GET request sent to " + URL)

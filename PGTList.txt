@@ -1,0 +1,31 @@
+import start
+
+Version 1.0
+
+from("C:\Users\pavlo\Downloads\my lengvic\libs\DNS\DNS.pgt")
+from("C:\Users\pavlo\Downloads\my lengvic\libs\ip-v4\ip-v4_lib.pgt")
+from("C:\Users\pavlo\Downloads\my lengvic\libs\internet_libs\http.pgt")
+from("C:\Users\pavlo\Downloads\my lengvic\libs\internet_libs\https.pgt")
+from("C:\Users\pavlo\Downloads\my lengvic\libs\internet_libs\GET\GET.pgt")
+from("C:\Users\pavlo\Downloads\my lengvic\libs\internet_libs\POST\POST_Protocols.pgt")
+
+Class build {
+    ("C:\Users\pavlo\Downloads\my lengvic\libs\DNS\DNS.pgt")
+    ("C:\Users\pavlo\Downloads\my lengvic\libs\ip-v4\ip-v4_lib.pgt")
+    ("C:\Users\pavlo\Downloads\my lengvic\libs\internet_libs\http.pgt")
+    ("C:\Users\pavlo\Downloads\my lengvic\libs\internet_libs\https.pgt")
+    ("C:\Users\pavlo\Downloads\my lengvic\libs\internet_libs\GET\GET.pgt")
+    ("C:\Users\pavlo\Downloads\my lengvic\libs\internet_libs\POST\POST_Protocols.pgt")
+}
+
+build {
+    start = "libs/internet_libs/http.pgt"
+    start = "libs/internet_libs/POST_Protocols.pgt"
+    start = "libs/internet_libs/GET/GET.pgt"
+    start = "libs/internet_libs/https.pgt"
+    start = "libs/ip-v4/ip-v4_lib.pgt"
+    start = "libs/DNS/DNS.pgt"
+    
+}
+
+import exit::end::();
